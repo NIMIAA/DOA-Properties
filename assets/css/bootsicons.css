@@ -1,0 +1,13 @@
+[class^="bi-"]:before, [class*=" bi-"]:before,
+[class^="bi-"]:after, [class*=" bi-"]:after {   
+  
+  font-size: 20px;                /* Default icon size */
+  font-style: normal;             /* Normal font style */
+  margin-left: 0px;
+  width: 30px;              /* Default margin */
+}
+
+/* Example icon styles */
+.bi-house:before { content: "\F8C5"; } /* Replace with actual unicode */
+.bi-car:before { content: "\f1b9"; }   /* Replace with actual unicode */
+.bi-person:before { content: "\f2c0"; } /* Replace with actual unicode */
