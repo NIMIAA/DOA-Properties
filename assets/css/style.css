@@ -229,6 +229,11 @@ nav.navbar.bootsnav {
         display: block;
         color: #fff;
     }
+    .navbar-toggler span{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 /* Show the menu when 'open' class is added */
 .navbar-menu.open {
