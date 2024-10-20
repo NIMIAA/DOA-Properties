@@ -137,8 +137,6 @@ nav.navbar.bootsnav {
 
 /*.navbar-brand*/
 .navbar-header a.navbar-brand ,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus{
-    
-    
     width: 20%;
 }
 
@@ -197,6 +195,100 @@ nav.navbar.bootsnav .navbar-toggle {
 }
 nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 /*.navbar-toggle */
+
+
+/* gpt */
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #192a55;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+/* Navbar items */
+.navbar-nav {
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.nav-item a:hover{
+    color: #fff;
+   
+}
+.navbar-toggler {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+}
+
+/* Desktop view: Show menu */
+@media (min-width: 992px) {
+    .navbar-menu {
+        display: block;
+    }
+}
+
+/* Mobile view: Hide menu initially */
+@media (max-width: 991px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        right: 0;
+        background-color: #192a55;
+        height: 100vh;
+    }
+    .nav-item {
+       padding: 5px 20px;
+    }
+    .navbar-toggler {
+        display: block;
+        color: #fff;
+    }
+}
+/* Show the menu when 'open' class is added */
+.navbar-menu.open {
+    display: block;
+}
+
+
 
 /*-------------------------------------
         3.  Welcome-hero

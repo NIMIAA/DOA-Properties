@@ -25,8 +25,9 @@
 	nav.navbar.bootsnav .navbar-collapse.collapse.show {padding-bottom: 30px;}
 	nav.navbar.bootsnav {background-color:#000;}
 	.wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a {padding: 18px 0px;}
-	nav.navbar.bootsnav .navbar-brand {padding: 25px;}
+	/* nav.navbar.bootsnav .navbar-brand {padding: 25px;} */
 	nav.navbar.bootsnav ul.nav > li > a {padding: 15px 0px;border: transparent;}
+	.navbar-header a.navbar-brand{width:60px; }
 }/*max-width:992px*/
 
 @media screen and (max-width:991px){
@@ -92,12 +93,11 @@
         
     }
     nav.navbar.bootsnav .navbar-brand {
-        padding: 2px 0;
-        font-size: 20px;
+      
          position: absolute;
-		 top: -5px;
+		 top: -10px;
         right: 70%;
-        transform: translateX(-50%); /* Ensure perfect centering */
+        transform: translateX(-50%); 
     }
 
     /* Adjust for sticky header */
