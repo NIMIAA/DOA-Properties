@@ -213,6 +213,11 @@ nav.navbar.bootsnav {
         top: 60px;
         left: 0;
         padding: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: translateY(-10px);
+       
     }
 
     .navbar-nav {
@@ -220,14 +225,24 @@ nav.navbar.bootsnav {
         text-align: center;
         right: 0;
         background-color: #192a55;
-        height: 100vh;
+        height: calc(100vh - 60px);
+        overflow-y: auto;
     }
     .nav-item {
        padding: 5px 20px;
+        color: #fff; 
+        transition: #192a55 0.3s ease; 
     }
     .navbar-toggler {
         display: block;
         color: #fff;
+        border: none; 
+        outline: none; 
+        cursor: pointer;
+    }
+    .navbar-toggler:focus {
+        outline: none; 
+        border: none; 
     }
     .navbar-toggler span{
         display: flex;
@@ -238,6 +253,9 @@ nav.navbar.bootsnav {
 /* Show the menu when 'open' class is added */
 .navbar-menu.open {
     display: block;
+    transform: translateY(0); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
 }
 
 
@@ -376,7 +394,7 @@ nav.navbar.bootsnav {
 --------------------------------------*/
 .service { padding: 260px 0 87px;}
 .service-content{margin: 30px 0 0;}
-.service-inquiry, .view-all{display: flex; justify-content: center;}
+.service-inquiry, .view-all, .view-all a{display: flex; justify-content: center; color: #fff;}
 .single-service-item{
     text-align: center;
     padding:55px 30px 60px;
